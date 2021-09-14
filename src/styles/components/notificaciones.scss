@@ -1,0 +1,26 @@
+.notificaciones__container {
+  margin: 20px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    margin-right: 2px;
+
+    &:vertical {
+      width: 7px;
+    }
+    &:horizontal {
+      height: 10px;
+    }
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(120, 122, 145, 0.5);
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+}

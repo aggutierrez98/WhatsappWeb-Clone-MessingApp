@@ -1,0 +1,37 @@
+// Base
+@import "./base/settings";
+@import "./base/base";
+
+// Pages
+@import "./pages/chat.scss";
+@import "./pages/login-register.scss";
+@import "./pages/confirmation-pages.scss";
+
+// Components
+@import "./components/chat-select.scss";
+@import "./components/inbox-people.scss";
+@import "./components/incoming-message.scss";
+@import "./components/message-profile.scss";
+@import "./components/messages.scss";
+@import "./components/outgoing-message.scss";
+@import "./components/search-box.scss";
+@import "./components/send-message.scss";
+@import "./components/sidebar-chat-item.scss";
+@import "./components/sidebar.scss";
+@import "./components/menu.scss";
+@import "./components/perfil.scss";
+@import "./components/sin-mensajes.scss";
+@import "./components/loader.scss";
+@import "./components/agregar-contacto.scss";
+@import "./components/usuario-card.scss";
+@import "./components/loading.scss";
+@import "./components/modal.scss";
+@import "./components/confirmacion.scss";
+@import "./components/toast.scss";
+@import "./components/notificaciones-card.scss";
+@import "./components/notificaciones.scss";
+@import "./components/selectores.scss";
+@import "./components/first-loading.scss";
+
+// Responsive
+@import "./responsive/responsive.scss";

@@ -1,0 +1,55 @@
+.message-profile {
+  height: 55px;
+  background-color: $light-grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.info-contacto {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.info-contacto-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 100%;
+}
+
+.info-contacto-img img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.info-contacto-nombre {
+  width: 85%;
+  margin-left: 10px;
+}
+
+.message-profile-button {
+  padding: 5px;
+  margin: 0 3% 0 0;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+  }
+}
+
+.message-profile-button ion-icon {
+  color: $dark-grey;
+  font-size: 30px;
+}
+
+.boton-navegacion-atras {
+  display: none;
+}

@@ -1,0 +1,143 @@
+.perfil {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: $light-grey;
+  width: 35%;
+  height: 100%;
+  z-index: 2;
+  border-right: 1px #c4c4c4 solid;
+  min-width: 300px;
+}
+
+.desaparecer {
+  animation: desaparece-izquierda ease 0.25s backwards;
+}
+
+.aparecer {
+  animation: aparece-izquierda ease 0.25s backwards;
+}
+
+.perfil_contenedor-boton {
+  background-color: $blue;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.perfil_boton {
+  display: flex;
+  color: $white;
+  font-size: 25px;
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.perfil_titulo {
+  margin-left: 20px;
+}
+
+.perfil_contenedor-imagen {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.perfil_imagen {
+  border-radius: 100px;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.perfil_contenedor-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  height: auto;
+  word-wrap: break-word;
+}
+.perfil_contenedor-info_titulo {
+  color: $grey;
+  margin-bottom: 22px;
+  margin-top: 15px;
+}
+
+.perfil_contenedor-info_formulario {
+  width: 85%;
+}
+
+.perfil_contenedor-info_texto {
+  font-size: 18px;
+  margin-right: 5%;
+  width: 82%;
+  background-color: transparent;
+}
+
+.info-input {
+  border: none;
+  border-bottom: 2px solid $blue;
+  resize: none;
+  background-color: transparent;
+  font-size: 18px;
+  width: 95%;
+  outline: none;
+}
+
+.perfil_info_contenedor {
+  display: flex;
+  flex-direction: row;
+
+  & ion-icon {
+    color: $blue;
+    font-size: 20px;
+  }
+}
+
+.perfil_contenedor_seleccionador-archivo {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  position: absolute;
+  opacity: 0;
+  border-radius: 100px;
+  transition: opacity 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  & ion-icon {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+}
+
+@keyframes aparece-izquierda {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes desaparece-izquierda {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

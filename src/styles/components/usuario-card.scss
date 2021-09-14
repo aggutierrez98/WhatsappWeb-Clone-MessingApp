@@ -1,0 +1,51 @@
+.usuario-card_container {
+  margin: 20px 30px;
+  display: flex;
+  flex-direction: row;
+}
+.usuario-card_imagen {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.usuario-card_nombres-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 15px;
+  flex-grow: 1;
+}
+
+.usuario-card_name {
+  color: $blue;
+}
+
+.usuario-card_email {
+  color: $dark-grey;
+  font-size: 15px;
+}
+
+.usuario-card_container-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.usuario-card_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: $blue;
+  margin-left: 35%;
+  font-size: 30px;
+  border-radius: 25px;
+  padding: 6.5px;
+  transition: background-color ease 0.2s;
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+  }
+}

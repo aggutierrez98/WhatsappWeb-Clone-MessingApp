@@ -1,0 +1,12 @@
+.sin-mensajes {
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 5px;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(1, 17, 27, 0.4);
+  backdrop-filter: blur(1.5px);
+  color: $white;
+}

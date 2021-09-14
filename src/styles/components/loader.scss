@@ -1,0 +1,35 @@
+.verification-loader_container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(175, 175, 175, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.verification-loader_title {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.verification-loader_animated {
+  width: 6em;
+  height: 6em;
+  border: 1.1em solid rgba(0, 0, 0, 0.2);
+  border-left: 1.1em solid $dark-blue;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

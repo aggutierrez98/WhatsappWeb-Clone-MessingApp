@@ -1,0 +1,97 @@
+.chat_list {
+  // border-bottom: 1px solid #c4c4c4;
+  cursor: pointer;
+  margin: 0;
+  padding: 18px 10px 10px;
+  height: 75px;
+  width: 100%;
+}
+
+.active_chat {
+  background: $white;
+}
+
+.chat_people {
+  clear: both;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.chat_img img {
+  float: left;
+  width: 50px;
+  width: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.chat_ib {
+  padding: 0 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: auto;
+  justify-content: center;
+  position: relative;
+}
+
+.chat_ib h5 {
+  font-size: 15px;
+  color: #464646;
+}
+
+.chat_ib p {
+  color: #989898;
+}
+
+.chat_last_message {
+  width: 100%;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat_mensaje {
+  margin-top: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+}
+
+.chat_fecha {
+  margin-left: 11px;
+  font-size: 12px;
+  min-width: 71px;
+}
+
+.chat-arriba {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chat_name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chat__notifiy-messages {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  background-color: $blue;
+  color: $white;
+  border-radius: 30px;
+}

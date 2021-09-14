@@ -1,0 +1,60 @@
+#menu {
+  position: absolute;
+  z-index: 1;
+  right: 5px;
+  background-color: $white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 2px;
+  padding: 8px 10px;
+  white-space: pre;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  // animation: appears ease 0.1s backwards;
+  // animation: leaves ease 0.1s backwards;
+}
+
+.menu-usario_button {
+  text-overflow: ellipsis;
+  color: $dark-blue;
+  padding: 12px;
+  font-size: 15px;
+  text-align: left;
+
+  &:hover {
+    color: $grey;
+  }
+}
+
+.menu-aparece {
+  animation: appears ease 0.15s backwards;
+}
+
+.menu-desaparece {
+  animation: leaves ease 0.15s backwards;
+}
+
+@keyframes appears {
+  0% {
+    transform-origin: top right;
+    transform: scale(0);
+  }
+  100% {
+    transform-origin: top right;
+    transform: scale(1);
+  }
+}
+
+@keyframes leaves {
+  0% {
+    transform-origin: top right;
+    transform: scale(1);
+  }
+  100% {
+    transform-origin: top right;
+    transform: scale(0);
+  }
+}

@@ -1,0 +1,34 @@
+.notificacion--card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.notificacion--card__buttons--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+}
+.notificacion--card__button {
+  color: $blue;
+  font-size: 38px;
+  height: 30px;
+  border-radius: 25px;
+  transition: color ease 0.2s;
+
+  &:hover {
+    color: $grey;
+  }
+}
+
+.notificacion--card__title {
+  color: $blue;
+  font-size: 20px;
+}
+
+.notificacion--card__fecha {
+  color: $grey;
+  font-size: 15px;
+}

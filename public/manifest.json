@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "MessingApp",
+  "name": "Aplication chat emuling whatsapp",
   "icons": [
     {
       "src": "favicon.ico",

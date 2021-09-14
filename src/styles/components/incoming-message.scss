@@ -1,0 +1,15 @@
+.incoming_msg-container {
+  margin-left: 7.5%;
+  width: 92.5%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2px;
+}
+
+.incoming_msg {
+  background-color: $white;
+  border-radius: 5px;
+  color: $blue;
+  padding: 10px 15px 10px 15px;
+  overflow: hidden;
+}
